@@ -6,7 +6,7 @@
 /*   By: vdoignie <vdoignie@student.42.fr>	    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2024/07/16 07:02:34 by vdoignie	       #+#    #+#	      */
-/*   Updated: 2024/07/16 17:03:45 by vdoignie         ###   ########.fr       */
+/*   Updated: 2024/07/16 22:18:05 by vdoignie         ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -15,32 +15,30 @@
 void	ft_putstr(char *c, int k)
 {
 	int		i;
+	char	re;
 
 	i = 0;
 	while (c[i] != '\0')
 	{
-		if (k % 4 == 0 || k % 11 == 0 || k % 16 == 0 || k % 23 == 0)
+		if (k == 4 || k % 11 == 0 || k % 16 == 0 || k % 23 == 0)
 		{
 			if ((c[i] == '\\') && (c[i + 1] != 32))
 			{
-				if (c[i + 1] == 'a')
-					ft_putchar('\a');
-				else if (c[i + 1] == 'b')
-					ft_putchar('\b');
-				else if (c[i + 1] == 'f')
-					ft_putchar('\f');
-				else if (c[i + 1] == 'n')
-					ft_putchar('\n');
-				else if (c[i + 1] == 'r')
-					ft_putchar('\r');
-				else if (c[i + 1] == 't')
-					ft_putchar('\t');
-				else if (c[i + 1] == 'v')
-					ft_putchar('\v');
+				re = '\\' + c[i + 1];
+				ft_putchar(re);
 				i = i + 2;
 			}
-			else if ((c[i] == '\\') && (c[i + 1] == '\\'))
+		}
+		else if (k == 1 || k % 8 == 0 || k % 13 == 0 || k % 20 == 0)
+		{
+			if ((c[i] == '\\') && (c[i + 1] == '\\'))
 				ft_putchar('\\');
+			else if ((c[i] == '\\') && (c[i + 1] != 32))
+			{
+				ft_putchar('\\');
+				ft_putchar(c[i + 1]);
+				i = i + 2;
+			}
 		}
 		ft_putchar(c[i++]);
 	}

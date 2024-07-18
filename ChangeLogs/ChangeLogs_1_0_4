@@ -1,0 +1,17 @@
+FR - Changelogs pour la 1.0.4 :
+
+• Refonte complète de la commande ft_putstr (Décidemment...)
+• Modification de la version dans le MAN_ENG & MAN_FR
+• Création du fichier ChangeLogs_1_0_4 que vous lisez actuellement
+• Modification de echo.h qui ajoute trois nouveaux prototypes
+• Modification du ft_params qui obtient deux nouvelles fonctions pour convenir à la norminette
+• Modification mineure du main (k == 7 au lieu de k % 7 == 0)
+
+ENG - Changelogs for 1.0.4 :
+
+• Rebuild the ft_putstr command (Definitely...)
+• Edit version in MAN_ENG & MAN_FR
+• Created ChangeLogs_1_0_4 file which you are actually reading
+• Edit echo.h file to add 3 new function prototypes
+• Edit ft_params file which adds two new functions to check on norminette
+• Minor edit of main file (k == 7 instead k % 7 == 0)

@@ -47,17 +47,17 @@ LISTE DES BACKSLASHES
        • \xHH octets par valeur hexacécimale HH (1 à 2 caractères)
 
 EXEMPLES
-	> ./a.out 'Hello World'
+	> ./echo 'Hello World'
 	Hello World
 
-	> ./a.out -e 'Top\nBottom'
+	> ./echo -e 'Top\nBottom'
 	Top
 	Bottom
 
-	> ./a.out -s 'Hello World'
+	> ./echo -s 'Hello World'
 	HelloWorld
 
-	> ./a.out -- -n
+	> ./echo -- -n
 	-n
 
 VOIR AUSSI

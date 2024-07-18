@@ -47,17 +47,17 @@ ESCAPE SEQUENCES
        • \xHH byte with hexadecimal value HH (1 to 2 digits)
 
 EXAMPLE
-	  > ./a.out 'Hello World'
+	  > ./echo 'Hello World'
 	  Hello World
 
-	  > ./a.out -e 'Top\nBottom'
+	  > ./echo -e 'Top\nBottom'
 	  Top
 	  Bottom
 
-	  > ./a.out -s 'Hello World'
+	  > ./echo -s 'Hello World'
 	  HelloWorld
 
-	  > ./a.out -- -n
+	  > ./echo -- -n
 	  -n
 
 SEE ALSO

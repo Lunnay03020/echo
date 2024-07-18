@@ -42,10 +42,6 @@ ESCAPE SEQUENCES
 
        • \v vertical tab
 
-       • \0NNN byte with octal value NNN (1 to 3 digits)
-
-       • \xHH byte with hexadecimal value HH (1 to 2 digits)
-
 EXAMPLE
 	  > ./echo 'Hello World'
 	  Hello World
@@ -66,4 +62,4 @@ SEE ALSO
 COPYRIGHT
        2024, Lunnay03020
 
-1.0.1				  Jul 16, 2024
+1.0.2				  Jul 16, 2024

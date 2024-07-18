@@ -1,0 +1,13 @@
+FR - Changelogs pour la 1.0.2 :
+
+• Refonte complète de la commande ft_putstr
+• Modification du main pour prendre en compte plusieurs options dans la commande distinctement
+• Modification de la version dans le MAN_ENG & MAN_FR
+• Création du fichier ChangeLogs_1_0_2 que vous lisez actuellement
+
+ENG - Changelogs for 1.0.2 :
+
+• Rebuild the ft_putstr command
+• Main file editted to consider many options dinstinctly
+• Edit version in MAN_ENG & MAN_FR
+• Created ChangeLogs_1_0_2 file which you are actually reading

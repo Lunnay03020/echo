@@ -6,7 +6,7 @@
 /*   By: vdoignie <vdoignie@student.42.fr>	    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2024/07/16 07:05:02 by vdoignie	       #+#    #+#	      */
-/*   Updated: 2024/07/16 08:06:01 by vdoignie         ###   ########.fr       */
+/*   Updated: 2024/07/16 15:00:51 by vdoignie         ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -24,14 +24,15 @@ int	main(int argc, char *argv[])
 		ft_putchar('\n');
 		return (0);
 	}
-	if (argv[1][0] == '-')
-		k = ft_params(argv[i]);
-	if (k != 0)
+	while (argv[i][0] == '-')
+	{
+		k += ft_params(argv[i]);
 		i++;
+	}
 	while (i < argc - 1)
 	{
 		ft_putstr(argv[i], k);
-		if (k == 12 || k == 13 || k == 16 || k == 19 || k == 20 || k == 23)
+		if (k % 12 == 0 || k % 13 == 0 || k % 16 == 0 || k % 19 == 0 || k % 20 == 0 || k % 23 == 0)
 			i++;
 		else
 		{

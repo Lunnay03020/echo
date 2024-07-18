@@ -42,10 +42,6 @@ LISTE DES BACKSLASHES
 
        • \v Tabulation verticale
 
-       • \0NNN octets par valeur octale NNN (1 à 3 caractères)
-
-       • \xHH octets par valeur hexacécimale HH (1 à 2 caractères)
-
 EXEMPLES
 	> ./echo 'Hello World'
 	Hello World
@@ -67,4 +63,4 @@ VOIR AUSSI
 COPYRIGHT
 	2024, Lunnay03020
 
-1.0.1				Jul 16, 2024
+1.0.2				Jul 16, 2024

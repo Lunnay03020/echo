@@ -1,0 +1,11 @@
+FR - Changelogs pour la 1.0.5 :
+
+• Modification de la version dans le MAN_ENG & MAN_FR
+• Création du fichier ChangeLogs_1_0_5 que vous lisez actuellement
+• Modification du main (Bug résolu où les espaces étaient supprimés même quand aucune option n'était mise)
+
+ENG - Changelogs for 1.0.5 :
+
+• Edit version in MAN_ENG & MAN_FR
+• Created ChangeLogs_1_0_5 file which you are actually reading
+• Edit of main file (Bug resolved with deleted spaces when you put no options)

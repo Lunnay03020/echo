@@ -6,7 +6,7 @@
 /*   By: vdoignie <vdoignie@student.42.fr>	    +#+  +:+	   +#+	      */
 /*						  +#+#+#+#+#+	+#+	      */
 /*   Created: 2024/07/16 07:05:02 by vdoignie	       #+#    #+#	      */
-/*   Updated: 2024/07/17 02:21:34 by vdoignie         ###   ########.fr       */
+/*   Updated: 2024/07/18 14:19:01 by vdoignie         ###   ########.fr       */
 /*									      */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	main(int argc, char *argv[])
 	while (i < argc - 1)
 	{
 		ft_putstr(argv[i], k);
-		if (k % 12 == 0 || k % 13 == 0 || k % 16 == 0)
+		if (k == 12 || k == 13 || k == 16)
 			i++;
-		else if (k % 19 == 0 || k % 20 == 0 || k % 23 == 0)
+		else if (k == 19 || k == 20 || k == 23)
 			i++;
 		else
 		{

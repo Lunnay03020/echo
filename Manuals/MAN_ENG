@@ -30,8 +30,6 @@ ESCAPE SEQUENCES
 
        • \b backspace
 
-       • \c produce no further output
-
        • \e escape
 
        • \f form feed
@@ -49,18 +47,18 @@ ESCAPE SEQUENCES
        • \xHH byte with hexadecimal value HH (1 to 2 digits)
 
 EXAMPLE
-          > ./a.out 'Hello World'
-          Hello World
+	  > ./a.out 'Hello World'
+	  Hello World
 
-          > ./a.out -e 'Top\nBottom'
-          Top
-          Bottom
+	  > ./a.out -e 'Top\nBottom'
+	  Top
+	  Bottom
 
 	  > ./a.out -s 'Hello World'
 	  HelloWorld
 
-          > ./a.out -- -n
-          -n
+	  > ./a.out -- -n
+	  -n
 
 SEE ALSO
        • the printf command, for more control over output formatting
@@ -68,4 +66,4 @@ SEE ALSO
 COPYRIGHT
        2024, Lunnay03020
 
-1.0                               Jul 16, 2024
+1.0.1				  Jul 16, 2024

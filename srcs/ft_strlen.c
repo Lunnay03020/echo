@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   echo.h                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vdoignie <vdoignie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/16 06:58:28 by vdoignie          #+#    #+#             */
-/*   Updated: 2024/07/16 13:33:07 by vdoignie         ###   ########.fr       */
+/*   Created: 2024/07/16 13:30:11 by vdoignie          #+#    #+#             */
+/*   Updated: 2024/07/16 13:32:34 by vdoignie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ECHO_H
-# define ECHO_H
+#include "../includes/echo.h"
 
-# include <unistd.h>
+int	ft_strlen(char *c)
+{
+	int	i;
 
-void	ft_putchar(char c);
-void	ft_putstr(char *c, int k);
-int		ft_params(char *c);
-int		ft_strlen(char *c);
-
-#endif
+	i = 0;
+	while (c[i] != '\0')
+		i++;
+	return (i);
+}

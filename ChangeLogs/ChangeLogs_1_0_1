@@ -1,0 +1,21 @@
+FR - Changelogs pour la 1.0.1 :
+
+• Ajout de la commande ft_strlen qui calcule la taille d'une chaîne de caractères
+• Modification de ft_params qui regarde désormais si l'option -- est renvoyée
+• Modification de echo.h qui ajoute le prototype de ft_strlen
+• Modification du Makefile pour ajouter l'option -o echo, qui modifiera le nom de l'exécutable
+• Modification du README.md pour remplacer ./a.out par ./echo
+• Création du dossier Changelogs qui comportera en détail les logs des futures MAJ 
+• Création du fichier ChangeLogs_1_0_1 que vous lisez actuellement
+• Modification de la version dans le MAN_ENG & MAN_FR
+
+ENG - Changelogs for 1.0.1 :
+
+• Add ft_strlen command which return string lenght
+• Edit of ft_params which checks if option -- is set
+• Edit of echo.h which adds ft_strlen prototype
+• Edit of Makefile ; Adding option -o echo, which modify executable name
+• Edit of README.md to replace ./a.out by ./echo
+• Add directory Changelogs, which contains the logs for next updates
+• Add ChangeLogs_1_0_1 file, you read it now
+• Edit version in MAN_ENG & MAN_FR

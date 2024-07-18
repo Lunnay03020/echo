@@ -1,0 +1,72 @@
+FRENCH VERSION OF MAN, FOR ENG VERSION, CHECK MAN_ENG
+
+NOM
+	echo - Affiche une ligne de texte.
+
+COMMENT L'UTILISER
+	echo [PARAMETRES] [PHRASE]
+
+DESCRIPTION
+	echo affiche une chaîne de caractères d'un texte donné.
+
+	Les options suivantes sont disponibles :
+
+	• -n, retire le retour à la ligne à la fin de la chaîne
+
+	• -s, Retire les espaces entre les mots
+
+	• -E, Retire l'interprétation des backslashes (Par défaut)
+
+	• -e, Active l'interprétation des backslashes
+
+	Cette commande accepte -- pour signaler la fin des options.
+
+LISTE DES BACKSLASHES
+	Si -e est utilisé, les séquences suivantes sont reconnues:
+
+       • \ Backslash classique
+
+       • \a Alerte (BEEP)
+
+       • \b Retour arrière
+
+       • \c produce no further output
+
+       • \e Échap
+
+       • \f Saut de page
+
+       • \n Retour à la ligne
+
+       • \r Retour chariot
+
+       • \t Tabulation horizontale
+
+       • \v Tabulation verticale
+
+       • \0NNN octets par valeur octale NNN (1 à 3 caractères)
+
+       • \xHH octets par valeur hexacécimale HH (1 à 2 caractères)
+
+EXEMPLES
+	> ./a.out 'Hello World'
+	Hello World
+
+	> ./a.out -e 'Top\nBottom'
+	Top
+	Bottom
+
+	> ./a.out -s 'Hello World'
+	HelloWorld
+
+	> ./a.out -- -n
+	-n
+
+VOIR AUSSI
+	• La commande printf, pour plus de contrôle sur le formatage de
+	sortie
+
+COPYRIGHT
+	2024, Lunnay03020
+
+1.0				Jul 16, 2024

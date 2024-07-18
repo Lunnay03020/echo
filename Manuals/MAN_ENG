@@ -1,0 +1,71 @@
+VERSION ANGLAISE DU MAN, POUR VOIR LA VERSION FRANCAISE, VOIR MAN_FR
+
+NAME
+       echo - display a line of text
+
+SYNOPSIS
+       echo [OPTIONS] [STRING]
+
+DESCRIPTION
+       echo displays a string of text.
+
+       The following options are available:
+
+       • -n, Do not output a newline
+
+       • -s, Do not separate arguments with spaces
+
+       • -E, Disable interpretation of backslash escapes (default)
+
+       • -e, Enable interpretation of backslash escapes
+
+       This command accepts -- to signal the end of the options.
+
+ESCAPE SEQUENCES
+       If -e is used, the following sequences are recognized:
+
+       • \ backslash
+
+       • \a alert (BEL)
+
+       • \b backspace
+
+       • \c produce no further output
+
+       • \e escape
+
+       • \f form feed
+
+       • \n new line
+
+       • \r carriage return
+
+       • \t horizontal tab
+
+       • \v vertical tab
+
+       • \0NNN byte with octal value NNN (1 to 3 digits)
+
+       • \xHH byte with hexadecimal value HH (1 to 2 digits)
+
+EXAMPLE
+          > ./a.out 'Hello World'
+          Hello World
+
+          > ./a.out -e 'Top\nBottom'
+          Top
+          Bottom
+
+	  > ./a.out -s 'Hello World'
+	  HelloWorld
+
+          > ./a.out -- -n
+          -n
+
+SEE ALSO
+       • the printf command, for more control over output formatting
+
+COPYRIGHT
+       2024, Lunnay03020
+
+1.0                               Jul 16, 2024
